@@ -25,7 +25,7 @@ export default function Hero() {
 
           <div className="inline-block">
             <span className="text-sm font-medium text-accent bg-accent/10 px-3 py-1 rounded-full">
-              Welcome to my portfolio
+              Welcome to my portfolio Alif
             </span>
           </div>
 
