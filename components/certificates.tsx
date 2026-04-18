@@ -48,12 +48,12 @@ const achievements: Achievement[] = [
   {
     id: 4,
     year: "2025",
-    title: "CCNA - Introductiom to Networks",
-    organization: "Introduction to Networks",
+    title: "CCNA - Introduction to Networks",
+    organization: "CCNAIntroduction to Networks",
     description: "Sertifikasi CCNA - Introduction to Networks.",
     type: "certification",
-    certificate: "/Sertifikat/Introduction to Networks.pdf",
-    skills: ["Networking", "Introduction to Networks"],
+    certificate: "/Sertifikat/CCNA Introduction to Networks.pdf",
+    skills: ["Networking", "CCNA Introduction to Networks"],
   },
 
   {
