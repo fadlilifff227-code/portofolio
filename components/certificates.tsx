@@ -41,14 +41,14 @@ const achievements: Achievement[] = [
     organization: "Entrepreneur",
     description: "Sertifikasi ETN - Entrepreneur.",
     type: "certification",
-    certificate: "/Sertifikat/EntrepreneurPCAP.pdf",
+    certificate: "/Sertifikat/Entrepreneur.pdf",
     skills: ["Networking", "Entrepreneur"],
   },
 
   {
     id: 4,
     year: "2025",
-    title: "CCNA - Introduction to Networks",
+    title: "CCNA - Introductiom to Networks",
     organization: "Introduction to Networks",
     description: "Sertifikasi CCNA - Introduction to Networks.",
     type: "certification",
@@ -63,19 +63,19 @@ const achievements: Achievement[] = [
     organization: "Profesional Programmer With Golang",
     description: "Sertifikasi PPWG - Profesional Programmer With Golang.",
     type: "certification",
-    certificate: "/Sertifikat/Profesional Programmer With GolangIntroduction to Networks.pdf",
+    certificate: "/Sertifikat/Profesional Programmer With Golang.pdf",
     skills: ["Networking", "Profesional Programmer With Golang"],
   },
 
   {
     id: 6,
     year: "2025",
-    title: "PCAP - ProgrammingEssentials in Python",
-    organization: "ProgrammingEssentials in Python",
-    description: "Sertifikasi PCAP - ProgrammingEssentials in Python.",
+    title: "PCAP - PCAP",
+    organization: "PCAP",
+    description: "Sertifikasi PCAP.",
     type: "certification",
-    certificate: "/Sertifikat/PCAP - ProgrammingEssentials in Python.pdf",
-    skills: ["Networking", "ProgrammingEssentials in Python"],
+    certificate: "/Sertifikat/PCAP.pdf",
+    skills: ["Networking", "PCAP"],
   }
 ]
 
