@@ -27,7 +27,7 @@ export default function Projects() {
       id: 2,
       title: 'Jamu Sehat',
       description: 'A modern e-commerce web application for traditional Indonesian herbal medicine (Jamu) featuring category filters, shopping cart, customizable WhatsApp-integrated checkout templates, and QRIS payments.',
-      image: '/jamu-sehat.png',
+      image: '/JAMU.png',
       tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Prisma', 'Zustand'],
       github: 'https://github.com/fadlilifff227-code/jamu',
       live: 'https://jamu-sehat.vercel.app/'
