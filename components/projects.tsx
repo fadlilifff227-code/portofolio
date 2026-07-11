@@ -1,5 +1,6 @@
 import { ExternalLink, Github } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface Project {
   id: number
@@ -15,18 +16,18 @@ export default function Projects() {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-featured e-commerce platform with product catalog, shopping cart, payment integration, and admin dashboard built with Next.js and PostgreSQL.',
-      image: 'bg-gradient-to-br from-blue-500 to-blue-600',
-      tags: ['Next.js', 'React', 'PostgreSQL', 'Stripe', 'Tailwind CSS'],
+      title: 'AI Barber Shop',
+      description: 'A modern barber shop website with premium UI/UX, animated sections, service showcase, booking interface, testimonials, and responsive design built using Next.js, TypeScript, Tailwind CSS, and Framer Motion.',
+      image: "/barber.png",
+      tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
       github: 'https://github.com',
-      live: 'https://example.com'
+      live: 'https://aibarbershop.vercel.app'
     },
     {
       id: 2,
       title: 'Task Management App',
       description: 'Real-time collaborative task management application with user authentication, team workspaces, and instant notifications using WebSocket technology.',
-      image: 'bg-gradient-to-br from-purple-500 to-purple-600',
+      image: '/task-app.png',
       tags: ['React', 'Node.js', 'WebSocket', 'MongoDB', 'Docker'],
       github: 'https://github.com',
       live: 'https://example.com'
@@ -35,7 +36,7 @@ export default function Projects() {
       id: 3,
       title: 'Analytics Dashboard',
       description: 'Comprehensive analytics dashboard displaying real-time metrics, user behavior analytics, and customizable reports with data visualization.',
-      image: 'bg-gradient-to-br from-emerald-500 to-emerald-600',
+      image: '/analytics.png',
       tags: ['React', 'D3.js', 'REST API', 'PostgreSQL', 'AWS'],
       github: 'https://github.com',
       live: 'https://example.com'
@@ -44,7 +45,7 @@ export default function Projects() {
       id: 4,
       title: 'Social Media App',
       description: 'Social platform featuring user profiles, post creation, real-time notifications, and direct messaging with modern UI and smooth interactions.',
-      image: 'bg-gradient-to-br from-pink-500 to-pink-600',
+      image: '/social-app.png',
       tags: ['Next.js', 'Firebase', 'Vercel', 'TypeScript', 'WebSocket'],
       github: 'https://github.com',
       live: 'https://example.com'
@@ -53,7 +54,7 @@ export default function Projects() {
       id: 5,
       title: 'AI Content Generator',
       description: 'AI-powered content generation tool leveraging OpenAI API to create blog posts, social media content, and marketing copy with customizable templates.',
-      image: 'bg-gradient-to-br from-orange-500 to-orange-600',
+      image: '/ai-gen.png',
       tags: ['Next.js', 'OpenAI API', 'React', 'Tailwind CSS', 'Vercel'],
       github: 'https://github.com',
       live: 'https://example.com'
@@ -62,7 +63,7 @@ export default function Projects() {
       id: 6,
       title: 'Weather App',
       description: 'Beautiful weather application with location-based forecasts, real-time weather data, and interactive weather maps built with modern web technologies.',
-      image: 'bg-gradient-to-br from-cyan-500 to-cyan-600',
+      image: '/weather-app.png',
       tags: ['React', 'Weather API', 'Leaflet', 'Tailwind CSS', 'Axios'],
       github: 'https://github.com',
       live: 'https://example.com'
@@ -85,7 +86,17 @@ export default function Projects() {
                 className="group bg-card rounded-lg overflow-hidden border border-border hover:border-accent transition-all duration-300 hover:shadow-lg hover:shadow-accent/20"
               >
                 {/* Project Image */}
-                <div className={`${project.image} h-48 relative overflow-hidden`}>
+                <div className="h-48 relative overflow-hidden">
+                  {project.image.startsWith('/') || project.image.startsWith('http') ? (
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ) : (
+                    <div className={`w-full h-full ${project.image}`} />
+                  )}
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
                 </div>
 
