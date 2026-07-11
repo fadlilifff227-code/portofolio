@@ -25,12 +25,12 @@ export default function Projects() {
     },
     {
       id: 2,
-      title: 'Task Management App',
-      description: 'Real-time collaborative task management application with user authentication, team workspaces, and instant notifications using WebSocket technology.',
-      image: '/task-app.png',
-      tags: ['React', 'Node.js', 'WebSocket', 'MongoDB', 'Docker'],
-      github: 'https://github.com',
-      live: 'https://example.com'
+      title: 'Jamu Sehat',
+      description: 'A modern e-commerce web application for traditional Indonesian herbal medicine (Jamu) featuring category filters, shopping cart, customizable WhatsApp-integrated checkout templates, and QRIS payments.',
+      image: '/jamu-sehat.png',
+      tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Prisma', 'Zustand'],
+      github: 'https://github.com/fadlilifff227-code/jamu',
+      live: 'https://jamu-sehat.vercel.app/'
     },
     {
       id: 3,
