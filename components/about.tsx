@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="py-20 sm:py-32 bg-background">
+    <section className="py-20 sm:py-32 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <div className="space-y-12">
           <div className="space-y-4">
@@ -21,7 +21,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="bg-card rounded-lg p-8 space-y-6">
+            <div className="bg-card/40 backdrop-blur-sm border border-border/50 rounded-lg p-8 space-y-6">
               <div>
                 <h3 className="text-sm font-semibold text-accent uppercase tracking-wide">Experience</h3>
                 <p className="text-3xl font-bold mt-2">5+ Years</p>

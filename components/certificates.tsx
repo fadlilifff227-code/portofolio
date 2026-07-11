@@ -82,7 +82,7 @@ const achievements: Achievement[] = [
 
 export default function Certificates() {
   return (
-    <section id="certificates" className="py-20 sm:py-32 bg-card/50">
+    <section id="certificates" className="py-20 sm:py-32 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <div className="space-y-12">
           <div className="space-y-4">
@@ -94,7 +94,7 @@ export default function Certificates() {
             {achievements.map((item) => (
               <div
                 key={item.id}
-                className="group bg-card rounded-lg overflow-hidden border border-border hover:border-accent transition-all duration-300 hover:shadow-lg hover:shadow-accent/20 flex flex-col"
+                className="group bg-card/40 backdrop-blur-sm rounded-lg overflow-hidden border border-border/50 hover:border-accent transition-all duration-300 hover:shadow-lg hover:shadow-accent/20 flex flex-col"
               >
                 <div className="bg-gradient-to-br from-accent/20 to-accent/5 h-40 relative overflow-hidden flex items-center justify-center">
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>

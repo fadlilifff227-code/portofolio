@@ -1,16 +1,26 @@
+"use client"
+
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useState, useEffect } from 'react'
+import Typewriter from 'typewriter-effect'
 
 export default function Hero() {
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background via-background to-card pt-20 pb-20">
+    <section className="min-h-screen flex items-center justify-center bg-transparent pt-20 pb-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <div className="text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-1000">
 
           <div className="flex justify-center mb-8">
-            <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full p-1 bg-gradient-to-tr from-accent via-accent/50 to-background shadow-2xl shadow-accent/20">
-              <div className="w-full h-full rounded-full overflow-hidden bg-card border-4 border-background relative">
+            <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full p-1 bg-gradient-to-tr from-accent via-accent/50 to-zinc-950 shadow-2xl shadow-accent/20">
+              <div className="w-full h-full rounded-full overflow-hidden bg-zinc-950 border-4 border-zinc-900 relative">
                 <Image
                   src="/OJAN.jpeg"
                   alt="Profile Picture"
@@ -29,11 +39,38 @@ export default function Hero() {
             </span>
           </div>
 
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-balance">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-balance text-white">
             ALIF FADLI
           </h1>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-balance text-muted-foreground mt-2">
-            Full Stack <span className="text-accent">Developer</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-balance text-muted-foreground mt-2 min-h-[60px] flex items-center justify-center gap-1">
+            {mounted ? (
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString('Full Stack ')
+                    .pauseFor(300)
+                    .typeString('<span class="text-accent">Developer</span>')
+                    .pauseFor(2500)
+                    .deleteChars(9)
+                    .typeString('<span class="text-accent">Engineer</span>')
+                    .pauseFor(2500)
+                    .deleteChars(8)
+                    .typeString('<span class="text-accent">Specialist</span>')
+                    .pauseFor(2500)
+                    .start()
+                }}
+                options={{
+                  loop: true,
+                  delay: 75,
+                  wrapperClassName: "inline-block",
+                  cursorClassName: "text-accent inline-block animate-pulse",
+                }}
+              />
+            ) : (
+              <span>
+                Full Stack <span className="text-accent">Developer</span>
+              </span>
+            )}
           </h2>
 
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto text-balance leading-relaxed">

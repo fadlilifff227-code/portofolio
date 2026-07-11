@@ -26,7 +26,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 sm:py-32 bg-card">
+    <section id="contact" className="py-20 sm:py-32 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <div className="space-y-12">
           <div className="space-y-4">
@@ -45,7 +45,7 @@ export default function Contact() {
                 <div className="space-y-4">
                   <a
                     href="mailto:your.email@example.com"
-                    className="flex items-center gap-3 p-4 rounded-lg bg-background hover:border-accent border border-border hover:border-accent transition-colors group"
+                    className="flex items-center gap-3 p-4 rounded-lg bg-card/40 backdrop-blur-sm border border-border/50 hover:border-accent transition-colors group"
                   >
                     <div className="p-2 bg-accent/10 rounded-lg group-hover:bg-accent/20 transition-colors">
                       <Mail className="text-accent" size={20} />
@@ -65,7 +65,7 @@ export default function Contact() {
                     href="https://github.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-background rounded-lg hover:bg-muted transition-colors"
+                    className="p-3 bg-card/40 backdrop-blur-sm border border-border/50 rounded-lg hover:bg-muted transition-colors"
                     aria-label="GitHub"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -76,7 +76,7 @@ export default function Contact() {
                     href="https://linkedin.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-background rounded-lg hover:bg-muted transition-colors"
+                    className="p-3 bg-card/40 backdrop-blur-sm border border-border/50 rounded-lg hover:bg-muted transition-colors"
                     aria-label="LinkedIn"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -87,7 +87,7 @@ export default function Contact() {
                     href="https://twitter.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-background rounded-lg hover:bg-muted transition-colors"
+                    className="p-3 bg-card/40 backdrop-blur-sm border border-border/50 rounded-lg hover:bg-muted transition-colors"
                     aria-label="Twitter"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -109,7 +109,7 @@ export default function Contact() {
                   type="text"
                   required
                   placeholder="Your name"
-                  className="w-full px-4 py-2 bg-background border border-border rounded-lg focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all"
+                  className="w-full px-4 py-2 bg-card/30 border border-border/50 rounded-lg focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all text-foreground"
                 />
               </div>
 
@@ -122,7 +122,7 @@ export default function Contact() {
                   type="email"
                   required
                   placeholder="your.email@example.com"
-                  className="w-full px-4 py-2 bg-background border border-border rounded-lg focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all"
+                  className="w-full px-4 py-2 bg-card/30 border border-border/50 rounded-lg focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all text-foreground"
                 />
               </div>
 
@@ -135,7 +135,7 @@ export default function Contact() {
                   required
                   placeholder="Tell me about your project..."
                   rows={5}
-                  className="w-full px-4 py-2 bg-background border border-border rounded-lg focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all resize-none"
+                  className="w-full px-4 py-2 bg-card/30 border border-border/50 rounded-lg focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all resize-none text-foreground"
                 />
               </div>
 

@@ -71,7 +71,7 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" className="py-20 sm:py-32 bg-background">
+    <section id="projects" className="py-20 sm:py-32 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <div className="space-y-12">
           <div className="space-y-4">
@@ -83,7 +83,7 @@ export default function Projects() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="group bg-card rounded-lg overflow-hidden border border-border hover:border-accent transition-all duration-300 hover:shadow-lg hover:shadow-accent/20"
+                className="group bg-card/40 backdrop-blur-sm rounded-lg overflow-hidden border border-border/50 hover:border-accent transition-all duration-300 hover:shadow-lg hover:shadow-accent/20"
               >
                 {/* Project Image */}
                 <div className="h-48 relative overflow-hidden">
