@@ -34,6 +34,15 @@ export default function Projects() {
     },
     {
       id: 3,
+      title: 'FreshBox',
+      description: 'A modern food and beverage e-commerce platform specializing in premium fresh juices and healthy meal boxes (Nasi Box) with interactive menu showcase and integrated WhatsApp direct ordering.',
+      image: '/fresh_box.png',
+      tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'WhatsApp API'],
+      github: 'https://github.com/fadlilifff227-code/freshbox',
+      live: 'https://fresh-box-one.vercel.app'
+    },
+    {
+      id: 4,
       title: 'Analytics Dashboard',
       description: 'Comprehensive analytics dashboard displaying real-time metrics, user behavior analytics, and customizable reports with data visualization.',
       image: '/analytics.png',
@@ -42,7 +51,7 @@ export default function Projects() {
       live: 'https://example.com'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Social Media App',
       description: 'Social platform featuring user profiles, post creation, real-time notifications, and direct messaging with modern UI and smooth interactions.',
       image: '/social-app.png',
@@ -51,20 +60,11 @@ export default function Projects() {
       live: 'https://example.com'
     },
     {
-      id: 5,
+      id: 6,
       title: 'AI Content Generator',
       description: 'AI-powered content generation tool leveraging OpenAI API to create blog posts, social media content, and marketing copy with customizable templates.',
       image: '/ai-gen.png',
       tags: ['Next.js', 'OpenAI API', 'React', 'Tailwind CSS', 'Vercel'],
-      github: 'https://github.com',
-      live: 'https://example.com'
-    },
-    {
-      id: 6,
-      title: 'Weather App',
-      description: 'Beautiful weather application with location-based forecasts, real-time weather data, and interactive weather maps built with modern web technologies.',
-      image: '/weather-app.png',
-      tags: ['React', 'Weather API', 'Leaflet', 'Tailwind CSS', 'Axios'],
       github: 'https://github.com',
       live: 'https://example.com'
     }
