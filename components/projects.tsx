@@ -43,12 +43,12 @@ export default function Projects() {
     },
     {
       id: 4,
-      title: 'Analytics Dashboard',
-      description: 'Comprehensive analytics dashboard displaying real-time metrics, user behavior analytics, and customizable reports with data visualization.',
-      image: '/analytics.png',
-      tags: ['React', 'D3.js', 'REST API', 'PostgreSQL', 'AWS'],
-      github: 'https://github.com',
-      live: 'https://example.com'
+      title: 'OutfitHub',
+      description: 'An editorial fashion lookbook and affiliate curation platform featuring daily outfit inspirations, interactive mix & match formula, multi-category filters, and direct official store links.',
+      image: '/outfit-hub.png',
+      tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+      github: 'https://github.com/fadlilifff227-code',
+      live: 'https://outfit-hub-delta.vercel.app/'
     },
     {
       id: 5,
