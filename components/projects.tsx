@@ -16,6 +16,15 @@ export default function Projects() {
   const projects: Project[] = [
     {
       id: 1,
+      title: 'INVENTRA',
+      description: 'A comprehensive web-based inventory management and asset monitoring system featuring real-time stock tracking, master data catalog, asset borrowing & returns, maintenance servicing, and operational analytics.',
+      image: '/inventra.png',
+      tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Inventory System'],
+      github: 'https://github.com/fadlilifff227-code',
+      live: 'https://inventra-five-red.vercel.app/'
+    },
+    {
+      id: 2,
       title: 'AI Barber Shop',
       description: 'A modern barber shop website with premium UI/UX, animated sections, service showcase, booking interface, testimonials, and responsive design built using Next.js, TypeScript, Tailwind CSS, and Framer Motion.',
       image: "/barber.png",
@@ -24,7 +33,7 @@ export default function Projects() {
       live: 'https://aibarbershop.vercel.app'
     },
     {
-      id: 2,
+      id: 3,
       title: 'Jamu Sehat',
       description: 'A modern e-commerce web application for traditional Indonesian herbal medicine (Jamu) featuring category filters, shopping cart, customizable WhatsApp-integrated checkout templates, and QRIS payments.',
       image: '/JAMU.png',
@@ -33,7 +42,7 @@ export default function Projects() {
       live: 'https://jamu-sehat.vercel.app/'
     },
     {
-      id: 3,
+      id: 4,
       title: 'FreshBox',
       description: 'A modern food and beverage e-commerce platform specializing in premium fresh juices and healthy meal boxes (Nasi Box) with interactive menu showcase and integrated WhatsApp direct ordering.',
       image: '/fresh_box.png',
@@ -42,22 +51,13 @@ export default function Projects() {
       live: 'https://fresh-box-one.vercel.app'
     },
     {
-      id: 4,
+      id: 5,
       title: 'OutfitHub',
       description: 'An editorial fashion lookbook and affiliate curation platform featuring daily outfit inspirations, interactive mix & match formula, multi-category filters, and direct official store links.',
       image: '/outfit-hub.png',
       tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
       github: 'https://github.com/fadlilifff227-code',
       live: 'https://outfit-hub-delta.vercel.app/'
-    },
-    {
-      id: 5,
-      title: 'Social Media App',
-      description: 'Social platform featuring user profiles, post creation, real-time notifications, and direct messaging with modern UI and smooth interactions.',
-      image: '/social-app.png',
-      tags: ['Next.js', 'Firebase', 'Vercel', 'TypeScript', 'WebSocket'],
-      github: 'https://github.com',
-      live: 'https://example.com'
     },
     {
       id: 6,
